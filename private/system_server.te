@@ -925,7 +925,6 @@ allow system_server sysfs_zram:file rw_file_perms;
 allow system_server kernel:security read_policy;
 
 add_service(system_server, system_server_service);
-add_service(system_server, cross_device_service);
 allow system_server artd_service:service_manager find;
 allow system_server audioserver_service:service_manager find;
 allow system_server authorization_service:service_manager find;
